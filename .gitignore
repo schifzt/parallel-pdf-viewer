@@ -1,5 +1,6 @@
-# misc
+# custom
 *.DS_Store
+/embed
 
 
 # --------------------
