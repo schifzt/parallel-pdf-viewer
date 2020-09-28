@@ -10,11 +10,16 @@ A PDF viewer suitable for online meeting that displays two PDF files side by sid
 + save layout
 
 # Related works
-Comparison with some related works.
-
-## [Draftable](https://draftable.com/)
-## [Side View](https://addons.mozilla.org/en-US/firefox/addon/side-view/)
++  [Draftable](https://draftable.com/)
++  [Side View](https://addons.mozilla.org/en-US/firefox/addon/side-view/)
 
 
 # License 
 MIT
+
+# TODO
++ iframeを使わずにviewerを表示
++ automaticズームで固定
+    + ズームを削除
++ filenameの取得
+    + componentのtitleに設定
