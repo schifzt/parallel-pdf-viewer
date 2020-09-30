@@ -1,20 +1,21 @@
 .lm_tab{
+  /* height: 20px!important; */
   border-top-right-radius: 25px 170px;
   border-top-left-radius: 20px 90px;
   padding : 0 30px 0 25px;
-  background:darkgray;
+  /* background:darkgray; */
   position : relative;
   -webkit-transform: perspective(100px) rotateX(10deg);
   -moz-transform: perspective(100px) rotateX(10deg);
 }
 
 .lm_tab.lm_active{
-  background:white;
+  background:#ffffff;
 }
 
 .lm_content{
   position: relative;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 #open-file-label
@@ -30,13 +31,14 @@
   border: solid 2px #5eca56;
   text-decoration: none;
   color: #5eca56;
-  background-color: white;
+  background-color: #ffffff;
   transition: .4s;
   /* transition: all .2s ease-in-out; */
 }
 
 #open-file-label:hover{
   box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  color: rgba(172, 211, 169, 100);
   border-color: rgba(172, 211, 169, 100);
 }
 

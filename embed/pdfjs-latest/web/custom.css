@@ -6,3 +6,8 @@ button#secondaryToolbarToggle,
 {
   display: none !important;
 }
+
+#viewerContainer
+{
+  background-color: #f4f4f4;
+}

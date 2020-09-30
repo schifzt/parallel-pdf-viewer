@@ -82,6 +82,9 @@ var persistentComponent = function (container, state) {
         input.setAttribute('accept', '.pdf');
 
         container.getElement().html(label);
+        // container.getElement().html(
+        //     "<iframe id='iframe-viewer' src='" + path_to_viewer + "' width='100%' height='100%'>"
+        // );
 
         input.addEventListener('change', e => {
             var files = e.target.files,
