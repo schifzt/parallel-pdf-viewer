@@ -18,7 +18,10 @@ A PDF viewer suitable for online meeting that displays two PDF files side by sid
 MIT
 
 # TODO
++ viewer.html以下のファイルでないと記憶できない問題
+    + electronを使って任意のファイルの相対パスを取得すれば解決できそう
 + iframeを使わずにviewerを表示
+    + --> かなり面倒くさそうだし，あまりメリットがなさそう
 + automaticズームで固定
     + ズームを削除
 + filenameの取得
