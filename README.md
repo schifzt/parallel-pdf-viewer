@@ -1,4 +1,4 @@
-# side-by-side pdf viewer
+# Parallel PDF Viewer 
 A PDF viewer suitable for online meeting that displays two PDF files side by side.
 
 # To be implemented...

@@ -61,11 +61,12 @@ var persistentComponent = function (container, state) {
         return;
     }
 
-    // const path_to_viewer = "./embed/pdfjs-2.3.200-dist/web/viewer.html#zoom=auto&pagemode=none?file=";
-    const path_to_viewer = "./embed/pdfjs-latest/web/viewer.html" + "#zoom=auto" + "?file=";
+    const path_to_viewer = "./embed/pdfjs-latest/web/viewer.html" + "?file=";
 
     if (state.fname) {
-        container.getElement().html("<iframe id='iframe-viewer' src='" + path_to_viewer + state.fname + "' width='100%' height='100%'>");
+        container.getElement().html(
+            "<iframe id='iframe-viewer' src='" + path_to_viewer + state.fname + "#zoom=auto" + "' width='100%' height='100%'>"
+        );
     } else {
 
         // Create file-open button
@@ -87,7 +88,9 @@ var persistentComponent = function (container, state) {
             var files = e.target.files,
                 fname = encodeURIComponent(String(files[0].name));
 
-            container.getElement().html("<iframe id='iframe-viewer' src='" + path_to_viewer + fname + "' width='100%' height='100%'>");
+            container.getElement().html(
+                "<iframe id='iframe-viewer' src='" + path_to_viewer + fname + "#zoom=auto" + "' width='100%' height='100%'>"
+            );
 
             container.extendState({
                 fname: fname,
