@@ -72,14 +72,14 @@ var persistentComponent = function (container, state) {
         var label = document.createElement('label'),
             input = document.createElement('input');
 
+        label.appendChild(input);
+        label.setAttribute('id', 'open-file-label');
+        label.setAttribute('for', 'open-file-input');
+        label.insertAdjacentText('afterbegin', 'Choose File');
+
+        input.setAttribute('id', 'open-file-input');
         input.setAttribute('type', 'file');
         input.setAttribute('accept', '.pdf');
-        input.setAttribute('id', 'open-file-input');
-
-        label.appendChild(input);
-        label.setAttribute('for', 'open-file-input');
-        label.setAttribute('style', 'cursor: pointer');
-        label.insertAdjacentText('afterbegin', '');
 
         container.getElement().html(label);
 

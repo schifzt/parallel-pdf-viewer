@@ -1,6 +1,45 @@
-h2{
-  font: 14px Arial, sans-serif;
-  color:#fff;
-  padding: 10px;
-  text-align: center;
+.lm_tab{
+  border-top-right-radius: 25px 170px;
+  border-top-left-radius: 20px 90px;
+  padding : 0 30px 0 25px;
+  background:darkgray;
+  position : relative;
+  -webkit-transform: perspective(100px) rotateX(10deg);
+  -moz-transform: perspective(100px) rotateX(10deg);
+}
+
+.lm_tab.lm_active{
+  background:white;
+}
+
+.lm_content{
+  position: relative;
+  background-color: white;
+}
+
+#open-file-label
+{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  border: solid 2px #5eca56;
+  text-decoration: none;
+  color: #5eca56;
+  background-color: white;
+  transition: .4s;
+  /* transition: all .2s ease-in-out; */
+}
+
+#open-file-label:hover{
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color: rgba(172, 211, 169, 100);
+}
+
+#open-file-input{
+  display: none;
 }
