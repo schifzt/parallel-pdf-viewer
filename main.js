@@ -68,7 +68,6 @@ var persistentComponent = function (container, state) {
             "<iframe id='iframe-viewer' src='" + path_to_viewer + state.fname + "#zoom=auto" + "' width='100%' height='100%'>"
         );
     } else {
-
         // Create file-open button
         var label = document.createElement('label'),
             input = document.createElement('input');

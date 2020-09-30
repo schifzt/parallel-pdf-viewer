@@ -1,7 +1,8 @@
 button#presentationMode,
 button#print,
 button#download,
-a#viewBookmark
+button#secondaryToolbarToggle,
+#viewBookmark
 {
-  display: none;
+  display: none !important;
 }
