@@ -1,0 +1,7 @@
+button#presentationMode,
+button#print,
+button#download,
+a#viewBookmark
+{
+  display: none;
+}

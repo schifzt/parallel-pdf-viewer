@@ -1,6 +1,7 @@
 # custom
 *.DS_Store
-/embed
+*.pdf
+/embed/pdfjs-2.3.200-dist
 
 
 # --------------------
