@@ -1,7 +1,7 @@
 .lm_tab{
-  /* height: 20px!important; */
   border-top-right-radius: 25px 170px;
   border-top-left-radius: 20px 90px;
+  margin-left: 1px;
   padding : 0 30px 0 25px;
   /* background:darkgray; */
   position : relative;
@@ -21,7 +21,7 @@
 #open-file-label
 {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
@@ -32,8 +32,6 @@
   text-decoration: none;
   color: #5eca56;
   background-color: #ffffff;
-  transition: .4s;
-  /* transition: all .2s ease-in-out; */
 }
 
 #open-file-label:hover{
