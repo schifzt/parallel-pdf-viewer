@@ -2,6 +2,7 @@ button#presentationMode,
 button#print,
 button#download,
 button#secondaryToolbarToggle,
+div#secondaryToolbar,
 #viewBookmark
 {
   display: none !important;
@@ -32,9 +33,10 @@ button#openFile:hover{
   transform: translate(-50%, -50%);
   cursor: pointer;
   display: inline-block;
-  padding: 7px 20px;
-  border-radius: 25px;
+  padding: 0.8em 1.2em;
+  border-radius: 1.5em;
   border: solid 2px #5eca56;
+  font-size: 20px;
   text-decoration: none;
   color: #5eca56;
   background-color: #f4f4f4;
