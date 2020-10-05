@@ -1,19 +1,21 @@
-const isElectron = false;
-
 var config = {
-    settings: {
-        selectionEnabled: false,
-        closePopoutsOnUnload: true,
-        showPopoutIcon: false,
-        showMaximiseIcon: true,
-        showCloseIcon: true,
-    },
     content: [{
         type: 'row',
         content: [{
             type: 'component',
             componentName: 'viewerComponent',
             title: 'file://',
+        }, {
+            type: 'column',
+            content: [{
+                type: 'component',
+                componentName: 'viewerComponent',
+                title: 'file://',
+            }, {
+                type: 'component',
+                componentName: 'viewerComponent',
+                title: 'file://',
+            }]
         }]
     }]
 };
