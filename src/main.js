@@ -53,6 +53,22 @@ myLayout.on('stackCreated', function (stack) {
 // 
 // Open file
 //
+var createFileOpenButton = function () {
+    var label = document.createElement('label'),
+        input = document.createElement('input');
+
+    label.appendChild(input);
+    label.setAttribute('id', 'open-file-label');
+    label.setAttribute('for', 'open-file-input');
+    label.insertAdjacentText('afterbegin', 'Choose File');
+
+    input.setAttribute('id', 'open-file-input');
+    input.setAttribute('type', 'file');
+    input.setAttribute('accept', '.pdf');
+
+    return Array(label, input);
+}
+
 var persistentComponent = function (container, state) {
 
     // Save file name
@@ -61,30 +77,16 @@ var persistentComponent = function (container, state) {
         return;
     }
 
-    const path_to_viewer = "./embed/pdfjs-latest/web/viewer.html" + "?file=";
+    const path_to_viewer = "./pdfjs/web/viewer.html" + "?file=";
 
     if (state.fname) {
         container.getElement().html(
             "<iframe id='iframe-viewer' src='" + path_to_viewer + state.fname + "#zoom=auto" + "' width='100%' height='100%'>"
         );
     } else {
-        // Create file-open button
-        var label = document.createElement('label'),
-            input = document.createElement('input');
-
-        label.appendChild(input);
-        label.setAttribute('id', 'open-file-label');
-        label.setAttribute('for', 'open-file-input');
-        label.insertAdjacentText('afterbegin', 'Choose File');
-
-        input.setAttribute('id', 'open-file-input');
-        input.setAttribute('type', 'file');
-        input.setAttribute('accept', '.pdf');
+        var [label, input] = createFileOpenButton();
 
         container.getElement().html(label);
-        // container.getElement().html(
-        //     "<iframe id='iframe-viewer' src='" + path_to_viewer + "' width='100%' height='100%'>"
-        // );
 
         input.addEventListener('change', e => {
             var files = e.target.files,
