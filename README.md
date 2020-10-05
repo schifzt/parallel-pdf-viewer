@@ -1,5 +1,5 @@
 # Parallel PDF Viewer 
-A PDF viewer suitable for online meeting that displays two PDF files side by side.
+A PDF viewer suitable for online meeting which displays two PDF files side by side.
 \
 [demo](https://schifzt.github.io/parallel-pdf-viewer/src/index.html)
 
