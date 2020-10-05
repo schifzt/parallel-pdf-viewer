@@ -1,6 +1,7 @@
 button#presentationMode,
 button#print,
 button#download,
+button#openFile,
 button#secondaryToolbarToggle,
 div#secondaryToolbar,
 #viewBookmark
@@ -14,6 +15,7 @@ div#secondaryToolbar,
 }
 
 
+/*
 button#openFile::before{
   display:none;
 }
@@ -47,3 +49,4 @@ button#openFile:hover{
   color: rgba(172, 211, 169, 100);
   border-color: rgba(172, 211, 169, 100);
 }
+*/

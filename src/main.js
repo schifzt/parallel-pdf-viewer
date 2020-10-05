@@ -56,52 +56,13 @@ myLayout.on('stackCreated', function (stack) {
 // Open file
 //
 var persistentComponent = function (container, state) {
-
-    // Save file name
-    if (!typeof window.localStorage) {
-        container.getElement().append('<h2 class="err">Your browser doesn\'t support localStorage.</h2>');
-        return;
-    }
-
     const path_to_viewer = "./pdfjs/web/viewer.html" + "?file=";
+    const fname = "main.pdf";
 
-    // if (state.fname) {
-    //     container.getElement().html(
-    //         "<iframe id='iframe-viewer' src='" + path_to_viewer + state.fname + "#zoom=auto" + "' width='100%' height='100%'>"
-    //     );
-    // } else {
-    // Create file-open button
-    // var label = document.createElement('label'),
-    //     input = document.createElement('input');
-
-    // label.appendChild(input);
-    // label.setAttribute('id', 'open-file-label');
-    // label.setAttribute('for', 'open-file-input');
-    // label.insertAdjacentText('afterbegin', 'Choose File');
-
-    // input.setAttribute('id', 'open-file-input');
-    // input.setAttribute('type', 'file');
-    // input.setAttribute('accept', '.pdf');
-
-    // container.getElement().html(label);
     container.getElement().html(
-        "<iframe id='iframe-viewer' src='" + path_to_viewer + "#zoom=auto" + "' width='100%' height='100%'>"
+        "<iframe id='iframe-viewer' src='" + path_to_viewer + fname + "#zoom=auto" + "' width='100%' height='100%'>"
     );
 
-    // input.addEventListener('change', e => {
-    //     var files = e.target.files,
-    //         fname = encodeURIComponent(String(files[0].name));
-
-    //     container.getElement().html(
-    //         "<iframe id='iframe-viewer' src='" + path_to_viewer + fname + "#zoom=auto" + "' width='100%' height='100%'>"
-    //     );
-
-    //     container.extendState({
-    //         fname: fname,
-    //     });
-    // });
-
-    // }
 };
 
 myLayout.registerComponent('viewerComponent', persistentComponent);
