@@ -1,6 +1,5 @@
 # custom
 *.DS_Store
-*.pdf
 /embed/pdfjs-2.3.200-dist
 
 
