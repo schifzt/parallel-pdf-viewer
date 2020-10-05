@@ -2,7 +2,6 @@ button#presentationMode,
 button#print,
 button#download,
 button#secondaryToolbarToggle,
-div#secondaryToolbar,
 #viewBookmark
 {
   display: none !important;
@@ -11,39 +10,4 @@ div#secondaryToolbar,
 #viewerContainer
 {
   background-color: #f4f4f4;
-}
-
-
-button#openFile::before{
-  display:none;
-}
-
-button#openFile{
-  background-color: #f4f4f4;
-}
-
-button#openFile:hover{
-  background-color: #f4f4f4;
-}
-
-#custom-css-open-file-label{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  display: inline-block;
-  padding: 0.8em 1.2em;
-  border-radius: 1.5em;
-  border: solid 2px #5eca56;
-  font-size: 20px;
-  text-decoration: none;
-  color: #5eca56;
-  background-color: #f4f4f4;
-}
-
-#custom-css-open-file-label:hover{
-  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-  color: rgba(172, 211, 169, 100);
-  border-color: rgba(172, 211, 169, 100);
 }

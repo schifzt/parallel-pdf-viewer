@@ -1,5 +1,3 @@
-const isElectron = false;
-
 var config = {
     settings: {
         selectionEnabled: false,
@@ -63,45 +61,45 @@ var persistentComponent = function (container, state) {
         return;
     }
 
-    const path_to_viewer = "./pdfjs/web/viewer.html" + "?file=";
+    const path_to_viewer = "./embed/pdfjs-latest/web/viewer.html" + "?file=";
 
-    // if (state.fname) {
-    //     container.getElement().html(
-    //         "<iframe id='iframe-viewer' src='" + path_to_viewer + state.fname + "#zoom=auto" + "' width='100%' height='100%'>"
-    //     );
-    // } else {
-    // Create file-open button
-    // var label = document.createElement('label'),
-    //     input = document.createElement('input');
+    if (state.fname) {
+        container.getElement().html(
+            "<iframe id='iframe-viewer' src='" + path_to_viewer + state.fname + "#zoom=auto" + "' width='100%' height='100%'>"
+        );
+    } else {
+        // Create file-open button
+        var label = document.createElement('label'),
+            input = document.createElement('input');
 
-    // label.appendChild(input);
-    // label.setAttribute('id', 'open-file-label');
-    // label.setAttribute('for', 'open-file-input');
-    // label.insertAdjacentText('afterbegin', 'Choose File');
+        label.appendChild(input);
+        label.setAttribute('id', 'open-file-label');
+        label.setAttribute('for', 'open-file-input');
+        label.insertAdjacentText('afterbegin', 'Choose File');
 
-    // input.setAttribute('id', 'open-file-input');
-    // input.setAttribute('type', 'file');
-    // input.setAttribute('accept', '.pdf');
+        input.setAttribute('id', 'open-file-input');
+        input.setAttribute('type', 'file');
+        input.setAttribute('accept', '.pdf');
 
-    // container.getElement().html(label);
-    container.getElement().html(
-        "<iframe id='iframe-viewer' src='" + path_to_viewer + "#zoom=auto" + "' width='100%' height='100%'>"
-    );
+        container.getElement().html(label);
+        // container.getElement().html(
+        //     "<iframe id='iframe-viewer' src='" + path_to_viewer + "' width='100%' height='100%'>"
+        // );
 
-    // input.addEventListener('change', e => {
-    //     var files = e.target.files,
-    //         fname = encodeURIComponent(String(files[0].name));
+        input.addEventListener('change', e => {
+            var files = e.target.files,
+                fname = encodeURIComponent(String(files[0].name));
 
-    //     container.getElement().html(
-    //         "<iframe id='iframe-viewer' src='" + path_to_viewer + fname + "#zoom=auto" + "' width='100%' height='100%'>"
-    //     );
+            container.getElement().html(
+                "<iframe id='iframe-viewer' src='" + path_to_viewer + fname + "#zoom=auto" + "' width='100%' height='100%'>"
+            );
 
-    //     container.extendState({
-    //         fname: fname,
-    //     });
-    // });
+            container.extendState({
+                fname: fname,
+            });
+        });
 
-    // }
+    }
 };
 
 myLayout.registerComponent('viewerComponent', persistentComponent);
@@ -110,5 +108,3 @@ myLayout.init();
 
 window.onload = function () {
 }
-
-

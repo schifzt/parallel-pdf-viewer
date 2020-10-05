@@ -34,7 +34,6 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 
   <script src="viewer.js"></script>
-  <script src="custom.js"></script>
 
 </head>
 
@@ -243,6 +242,10 @@ See https://github.com/adobe-type-tools/cmap-resources
                 <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
               </button>
 
+              <button id="openFile" class="toolbarButton openFile" title="Open File" tabindex="32"
+                data-l10n-id="open_file">
+                <span data-l10n-id="open_file_label">Open</span>
+              </button>
 
               <button id="print" class="toolbarButton print hiddenMediumView" title="Print" tabindex="33"
                 data-l10n-id="print">
@@ -328,10 +331,6 @@ See https://github.com/adobe-type-tools/cmap-resources
 
       <div id="viewerContainer" tabindex="0">
         <div id="viewer" class="pdfViewer"></div>
-        <button id="openFile" class="toolbarButton openFile" title="Open File" tabindex="32" data-l10n-id="open_file">
-          <!-- <span data-l10n-id="open_file_label"></span> -->
-          <label id="custom-css-open-file-label">Choose File</label>
-        </button>
       </div>
 
       <div id="errorWrapper" hidden='true'>
