@@ -1,7 +1,8 @@
 # Parallel PDF Viewer 
-A PDF viewer suitable for online meeting which displays two PDF files side by side.
-\
-[demo](https://schifzt.github.io/parallel-pdf-viewer/src/index.html)
+A PDF viewer to display PDF files side by side.
+
+## Demo
+Online demo: https://schifzt.github.io/parallel-pdf-viewer/src/index.html
 
 <!-- ## References
 +  [Gallery of user projects and modifications]https://github.com/mozilla/pdf.js/wiki/Gallery-of-user-projects-and-modifications
@@ -12,10 +13,11 @@ A PDF viewer suitable for online meeting which displays two PDF files side by si
 ## License 
 MIT
 
-This software uses [PDF.js](https://github.com/mozilla/pdf.js) with some modification.
-PDF.js is distributed in the Apache License 2.0.
+This software uses
++ [PDF.js](https://github.com/mozilla/pdf.js) (distributed under the <u>Apache License 2.0</u>) with some modification
++ [Golden Layout](https://github.com/golden-layout/golden-layout) (distributed under the <u>MIT Licence</u>)
 
-## To be implemented...
+## To be implemented
 + material UI
 + highlight active window
 + able to resize window width freely
