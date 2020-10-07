@@ -1,4 +1,4 @@
-.lm_tab{
+.lm_tab {
   border-top-right-radius: 25px 170px;
   border-top-left-radius: 20px 90px;
   margin-left: 1px;
@@ -9,17 +9,22 @@
   -moz-transform: perspective(100px) rotateX(10deg);
 }
 
-.lm_tab.lm_active{
+.lm_tab.lm_active {
   background:#ffffff;
 }
 
-.lm_content{
+.lm_content {
   position: relative;
   background-color: #ffffff;
 }
 
-#open-file-label
+.lm_splitter.lm_horizontal,
+.lm_splitter.lm_vertical
 {
+  background-color: #5eca56;
+}
+
+#open-file-label {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -34,12 +39,12 @@
   background-color: #ffffff;
 }
 
-#open-file-label:hover{
+#open-file-label:hover {
   box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
   color: rgba(172, 211, 169, 100);
   border-color: rgba(172, 211, 169, 100);
 }
 
-#open-file-input{
+#open-file-input {
   display: none;
 }

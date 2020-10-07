@@ -1,4 +1,9 @@
 var config = {
+    settings: {
+        constrainDragToContainer: true,
+        selectionEnabled: false,
+        showPopoutIcon: false,
+    },
     content: [{
         type: 'row',
         content: [{
