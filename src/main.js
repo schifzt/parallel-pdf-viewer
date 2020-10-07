@@ -64,12 +64,12 @@ myLayout.on('stackCreated', function (stack) {
 //
 var persistentComponent = function (container, state) {
     const path_to_viewer = "./pdfjs/web/viewer.html" + "?file=";
+    const viewer_option = "#zoom=page-width&pagemode=none";
     const fname = "main.pdf";
 
     container.getElement().html(
-        "<iframe id='iframe-viewer' src='" + path_to_viewer + fname + "#zoom=page-width" + "' width='100%' height='100%'>"
+        "<iframe id='iframe-viewer' src='" + path_to_viewer + fname + viewer_option + "' width='100%' height='100%'>"
     );
-
 };
 
 myLayout.registerComponent('viewerComponent', persistentComponent);
