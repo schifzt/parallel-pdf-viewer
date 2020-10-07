@@ -62,7 +62,7 @@ var persistentComponent = function (container, state) {
     const fname = "main.pdf";
 
     container.getElement().html(
-        "<iframe id='iframe-viewer' src='" + path_to_viewer + fname + "#zoom=auto" + "' width='100%' height='100%'>"
+        "<iframe id='iframe-viewer' src='" + path_to_viewer + fname + "#zoom=page-width" + "' width='100%' height='100%'>"
     );
 
 };
