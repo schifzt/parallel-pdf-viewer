@@ -3,6 +3,7 @@ A PDF viewer to display PDF files side by side.
 
 ## Demo
 Online demo: https://schifzt.github.io/parallel-pdf-viewer/src/index.html
+\
 Note that file-open feature is disabled in this demo.
 
 <!-- ## References
